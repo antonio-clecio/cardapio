@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/output.css" />
+
+    <title>Brocadão Burger - A melhor hamburgueria da cidade!</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+      <div class="w-full h-full flex flex-col justify-center items-center">
+        <img src="./assets/logo-brocadao.png" class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200" alt="Logo Brocadão" />
+        <h1 class="text-4xl mt-4 mb-2 font-bold text-white">Brocadão Burger</h1>      
+        <span class="text-white font-medium">Avenida Principal, Novo Gama - GO</span>
+        <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+          <span class="text-white font-medium">Seg à Dom - 18:00 as 23:00</span>
+        </div>
+      </div>
+    </header>
+    <!-- FIM HEADER -->
+
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">Conheça nosso menu</h2>
+
+    <!-- INICIO MENU -->
+    <div id="menu">
+      <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+        <!--PRODUTO ITEM-->
+        <div class="flex gap-2">
+          <img src="./assets/hamb-1.png" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" alt="Big Broca Bacon" />
+          <div>
+            <p class="font-bold">Big Broca Bacon</p>
+            <p class="text-sm">Dois hambúrgueres (100% carne bovina), alface americana, queijo processado sabor cheddar, molho especial, cebola, picles, bacon e pão com gergelim.</p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 25.90</p>
+              <button class="bg-gray-900 px-5 rounded add-to-card-btn" data-name="Big Broca Bacon" data-price="25.90">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--FIM PRODUTO ITEM-->
+        <!--PRODUTO ITEM-->
+        <div class="flex gap-2">
+          <img src="./assets/hamb-2.png" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" alt="Duplo Cheddar BrocaMelt" />
+          <div>
+            <p class="font-bold">Duplo Cheddar BrocaMelt</p>
+            <p class="text-sm">Dois hambúrgueres (100% carne bovina), molho lácteo cremoso sabor cheddar, cebola ao molho shoyu e pão escuro com gergelim.</p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 35.90</p>
+              <button class="bg-gray-900 px-5 rounded add-to-card-btn" data-name="Duplo Cheddar BrocaMelt" data-price="13.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--FIM PRODUTO ITEM-->
+        <!--PRODUTO ITEM-->
+        <div class="flex gap-2">
+          <img src="./assets/hamb-3.png" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" alt="Broca Melt Crispy" />
+          <div>
+            <p class="font-bold">Broca Melt Crispy</p>
+            <p class="text-sm">Delicioso molho lácteo cremoso sabor cheddar, hambúrguer de carne 100% bovina, maionese especial, queijo processado sabor cheddar e pão tipo brioche.</p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 39.90</p>
+              <button class="bg-gray-900 px-5 rounded add-to-card-btn" data-name="Broca Melt Crispy" data-price="39.90">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--FIM PRODUTO ITEM-->
+        <!--PRODUTO ITEM-->
+        <div class="flex gap-2">
+          <img src="./assets/hamb-4.png" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" alt="BrocaCrispy Chicken Deluxe" />
+          <div>
+            <p class="font-bold">BrocaCrispy Chicken Deluxe</p>
+            <p class="text-sm">Sanduiche composto por tipo brioche com batata, carne 100% de peito de frango, temperada e empanada, maionese, alface americana e tomate.</p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 28.90</p>
+              <button class="bg-gray-900 px-5 rounded add-to-card-btn" data-name="BrocaCrispy Chicken Deluxe" data-price="28.90">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--FIM PRODUTO ITEM-->
+        <div class="flex gap-">
+          <img src="./assets/hamb-5.png" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" alt="Hambúrguer Recheado" />
+          <div>
+            <p class="font-bold">Hambúrguer Recheado</p>
+            <p class="text-sm">Uma variação do tradicional, com ingredientes extras no meio da carne, como queijo e outros complementos.</p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 13.00</p>
+              <button class="bg-gray-900 px-5 rounded add-to-card-btn" data-name="Hambúrguer Recheado" data-price="13.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--FIM PRODUTO ITEM-->
+        <div class="flex gap-2">
+          <img src="./assets/hamb-6.png" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" alt="Hambúrguer Recheado" />
+          <div>
+            <p class="font-bold">Hambúrguer Recheado</p>
+            <p class="text-sm">Uma variação do tradicional, com ingredientes extras no meio da carne, como queijo e outros complementos.</p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 13.00</p>
+              <button class="bg-gray-900 px-5 rounded add-to-card-btn" data-name="Hambúrguer Recheado" data-price="13.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--FIM PRODUTO ITEM-->
+        <div class="flex gap-2">
+          <img src="./assets/hamb-7.png" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" alt="Hambúrguer Recheado" />
+          <div>
+            <p class="font-bold">Hambúrguer Recheado</p>
+            <p class="text-sm">Uma variação do tradicional, com ingredientes extras no meio da carne, como queijo e outros complementos.</p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 13.00</p>
+              <button class="bg-gray-900 px-5 rounded add-to-card-btn" data-name="Hambúrguer Recheado" data-price="13.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--FIM PRODUTO ITEM-->
+        <div class="flex gap-2">
+          <img src="./assets/hamb-8.png" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" alt="Hambúrguer Gourmet com Legumes" />
+          <div>
+            <p class="font-bold">Hambúrguer Gourmet com Legumes</p>
+            <p class="text-sm">Uma mistura de carne com cogumelos e legumes, resultando em hambúrgueres leves e saborosos.</p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 14.00</p>
+              <button class="bg-gray-900 px-5 rounded add-to-card-btn" data-name="Hambúrguer Gourmet com Legumes" data-price="14.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--FIM PRODUTO ITEM-->
+      </main>
+    </div>
+    <!-- FIM MENU -->
+
+  </body>
+</html>
